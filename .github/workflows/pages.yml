@@ -22,6 +22,11 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare frontend
+        run: |
+          mkdir -p dist
+          cp index.html app.js style.css dist/
+
       - name: Upload frontend
         uses: actions/upload-pages-artifact@v3
         with:
