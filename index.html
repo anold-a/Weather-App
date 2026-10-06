@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+/>
+  <link rel="stylesheet" href="./style.css">
+  <title>weather-app</title>
+</head>
+<main class="weather-app">
+
+    <section class="hero">
+      <span class="eyebrow">
+        <i class="fa-solid fa-cloud-sun"></i>
+        WEATHER DASHBOARD
+      </span>
+
+      <h1 id="scramble-text">const codebase = "restructured";</h1>
+
+      <p>&lt;TrackYourWeather/&gt;</p>
+    </section>
+
+
+    <section class="search-panel">
+
+      <div class="search-heading">
+        <div class="icon-box">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+
+        <div>
+          <h2>Check the weather</h2>
+          <p>Search for a city to see current conditions.</p>
+        </div>
+      </div>
+
+      <div id="actions">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Enter city name"
+        >
+
+        <button id="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          Search
+        </button>
+      </div>
+
+    </section>
+
+
+    <section id="content-display">
+
+      <div class="weather-card humidity-card">
+        <div class="card-icon">
+          <i class="fa-solid fa-droplet"></i>
+        </div>
+
+        <div>
+          <span>Humidity</span>
+          <p id="humidity-percentage">--</p>
+        </div>
+      </div>
+
+
+      <div class="weather-card wind-card">
+        <div class="card-icon">
+          <i class="fa-solid fa-wind"></i>
+        </div>
+
+        <div>
+          <span>Wind speed</span>
+          <p id="wind-speed">--</p>
+        </div>
+      </div>
+
+
+      <div class="weather-card temperature-card">
+        <div class="card-icon">
+          <i class="fa-solid fa-temperature-half"></i>
+        </div>
+
+        <div>
+          <span>Temperature</span>
+          <p id="weather_temp">--</p>
+        </div>
+      </div>
+
+
+      <div class="weather-card location-card">
+        <div class="card-icon">
+          <i class="fa-solid fa-map-pin"></i>
+        </div>
+
+        <div>
+          <span>Location</span>
+          <p id="weather_location">--</p>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="./app.js"></script>
+
+</body>
+</html>
